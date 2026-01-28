@@ -7,6 +7,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:key" element={<RedirectPage />} />
         <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
