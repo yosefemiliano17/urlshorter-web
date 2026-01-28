@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "^/[a-zA-Z0-9]{6}$": {
-        target: "http://localhost:8080",
+        target: "https://urlshorter-api.onrender.com",
         changeOrigin: true,
         secure: false,
       }
