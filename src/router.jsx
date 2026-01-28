@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import RedirectPage from "./pages/RedirectPage";
-import NotFound from "./pages/NotFound";
+import ErrorPage from "./pages/Error";
 
 export default function Router() {
   return (
@@ -9,7 +9,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:key" element={<RedirectPage />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
