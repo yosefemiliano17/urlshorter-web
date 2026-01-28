@@ -25,7 +25,7 @@ export default function UrlForm({ onSuccess }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="url"
+        type="text"
         placeholder="https://example.com"
         value={url}
         onChange={(e) => setUrl(e.target.value)}
